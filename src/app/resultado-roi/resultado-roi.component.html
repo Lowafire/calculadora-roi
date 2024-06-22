@@ -1,0 +1,16 @@
+@if (!resultado()) {
+    <p class="center">Ingrese los valores correspondientes y presione "Calcular"</p>
+}@else {
+    <table>
+        <thead>
+            <tr>
+                <th class="center">Ganancias Totales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">{{resultado()?.total}}</td>
+            </tr>
+        </tbody>
+    </table>
+}
