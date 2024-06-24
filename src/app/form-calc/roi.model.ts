@@ -4,5 +4,6 @@ export interface Roi{
 }
 
 export interface ResultadoRoi{
-    total: number;
+    gananciaNeta: number;
+    porcentajeRetorno: number;
 }

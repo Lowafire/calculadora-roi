@@ -4,13 +4,16 @@
     <table>
         <thead>
             <tr>
-                <th class="center">Ganancias Totales</th>
+                <th class="center">Ganancias Netas</th>
+                <th class="center">Porcentaje de Retorno</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="center">{{resultado()?.total | currency}}</td>
-            </tr>
+                <tr>
+                    <td class="center">{{resultado()?.gananciaNeta | currency}}</td>
+                    <td class="center">{{resultado()?.porcentajeRetorno}}%</td>
+                </tr>
+            
         </tbody>
     </table>
 }

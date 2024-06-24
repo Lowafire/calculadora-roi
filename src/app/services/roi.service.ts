@@ -10,11 +10,12 @@ export class RoiService {
     let total:ResultadoRoi;
     const {ingreso, inversion} =  roi;
 
-    const resta = ingreso - inversion;
+    const gananciaNeta = ingreso - inversion;
 
-    const formula = (resta / inversion) * 100;
+    const divicion = (gananciaNeta / inversion);
+    const porcentajeRetorno = divicion * 100;
 
-    total = {total: formula}
+    total = ({gananciaNeta: gananciaNeta, porcentajeRetorno: porcentajeRetorno})
 
     this.resultado.set(total);
  } 
